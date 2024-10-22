@@ -18,7 +18,7 @@ const Example = React.memo(({ iframeUrl, linkTitle }) => {
   return (
     <>
       {/* Enlace que abre el modal */}
-      <a
+      <button
         onClick={e => {
           e.preventDefault() // Evitar el comportamiento predeterminado del enlace
           setOpen(true) // Abrir el modal
@@ -26,7 +26,7 @@ const Example = React.memo(({ iframeUrl, linkTitle }) => {
         className={`${getLinkClass(location.pathname)} block`}
       >
         {linkTitle} {/* Usa el título pasado como prop */}
-      </a>
+      </button>
 
       {/* Modal */}
       <Transition.Root show={open} as={Fragment}>
