@@ -57,8 +57,8 @@ fragment Asset on Asset {
       stage
     }
   }
-  imageSeo {
-    ... on Seo {
+  imageSeos {
+    ... on Seos {
       remoteTypeName: __typename
       remoteId: id
       stage

@@ -16,6 +16,7 @@ import { useRef, useState, useEffect } from "react"
 // import { IubendaCookiePolicy } from "../components/iubendaComponent"
 // import { IubendaCookieConsent } from "../components/iubendaComponent"
 import StickyBar from "../components/StickyBar"
+import { Helmet } from "react-helmet"
 
 export default function IndexPage({ pageContext }) {
   let [open, setOpen] = useState(false)
@@ -145,6 +146,42 @@ export default function IndexPage({ pageContext }) {
       {/* </CookieNotice> */}
       {/* <IubendaCookiePolicy /> */}
       {/* <IubendaCookieConsent /> */}
+
+      <Helmet>
+        <title>
+          {IndexContentData.indices[0].searchEngineOptimization.title}
+        </title>
+        <meta
+          name="description"
+          content={
+            IndexContentData.indices[0].searchEngineOptimization.description
+          }
+        />
+        <meta
+          name="keywords"
+          content={
+            IndexContentData.indices[0].searchEngineOptimization.keywords
+          }
+        />
+        <meta
+          property="og:title"
+          content={IndexContentData.indices[0].searchEngineOptimization.title}
+        />
+        <meta
+          property="og:description"
+          content="Explora Costa Rica con nuestros vehículos 4x4. ¡Reserva hoy y empieza tu aventura!"
+        />
+        <meta
+          property="og:image"
+          content="https://media.graphassets.com/OwrVgNoEQRK7vun9ALNj"
+        />
+        <meta
+          property="og:image:alt"
+          content="Alquiler de autos 4x4 todo terreno en Costa Rica, ideales para explorar montañas y selvas"
+        />
+        <meta property="og:url" content="https://wild-rider.com/" />
+        <meta property="og:type" content="website" />
+      </Helmet>
 
       <section id="sectionBellowHeader">
         <ReactMarkdown>

@@ -1,4 +1,4 @@
-fragment Seo on Seo {
+fragment Seos on Seos {
   stage
   remoteId: id
   createdAt

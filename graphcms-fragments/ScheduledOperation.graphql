@@ -150,7 +150,7 @@ fragment ScheduledOperation on ScheduledOperation {
       locale
       stage
     }
-    ... on Seo {
+    ... on Seos {
       remoteTypeName: __typename
       remoteId: id
       stage

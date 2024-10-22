@@ -69,6 +69,16 @@ fragment Index on Index {
       }
     }
   }
+  searchEngineOptimization {
+    ... on Seo {
+      stage
+      locale
+      id
+      title
+      description
+      keywords
+    }
+  }
   createdBy {
     ... on User {
       remoteTypeName: __typename

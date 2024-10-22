@@ -60,6 +60,14 @@ const IndexContent = gql`
         markdown
         text
       }
+      searchEngineOptimization {
+        title
+        description
+        keywords
+        localizations {
+          title
+        }
+      }
     }
   }
 `

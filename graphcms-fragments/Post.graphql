@@ -56,7 +56,7 @@ fragment Post on Post {
     }
   }
   seo {
-    ... on Seo {
+    ... on Seos {
       remoteTypeName: __typename
       remoteId: id
       stage
